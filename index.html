@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <title>EJERCICIO 5 - BOOTSTRAP</title>
+    <style>
+        .cabecera {
+            background: url("images/walpaper-fez-1920x1080.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .title {
+            font-family: 'Black Han Sans', sans-serif;
+            color: white;
+        }
+
+        body {
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+    <!--CABECERA-->
+    <section class="container-fluid d-flex justify-content-center align-items-center cabecera" id="inicio">
+        <h1 class="display-2 title">Javi Moya</h1>
+    </section>
+
+    <!--NAVBAR CON SPYSCROLL-->
+    <nav class="navbar navbar-dark bg-info navbar-expand-sm sticky-top" id="navbar-example">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/Logo.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo Javi Moya">
+            Javi Moya
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav mr-auto ml-auto text-center">
+                <a class="nav-item nav-link active" href="#inicio">Inicio</a>
+                <a class="nav-item nav-link" href="#slider">Slider</a>
+                <a class="nav-item nav-link" href="#cards">Cards</a>
+                <a class="nav-item nav-link" href="#jumbotron">Jumbotron</a>
+                <a class="nav-item nav-link" href="#contacto">Contacto</a>
+            </div>
+            <div class="text-center">
+                <a class="btn btn-social-icon btn-vimeo mr-2" href="https://vimeo.com/javimoya"><span
+                        class="fab fa-vimeo"></span></a>
+                <a class="btn btn-social-icon btn-linkedin"
+                    href="https://www.linkedin.com/in/javier-moya-serrano-83a55664/"><span
+                        class="fab fa-linkedin"></span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div data-spy="scroll" data-target="#navbar-example" data-offset="0">
+
+        <!--CAROUSEL/SLIDER-->
+        <section class="container mt-5" id="slider">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/fez1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/fez2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/fez3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </section>
+
+        <!--CARDS-->
+        <section class="container mt-5 pt-5" id="cards">
+            <div class="card-deck">
+                <div class="card">
+                    <img src="images/fez-1.jpg" class="card-img-top img-fluid" alt="dest-fez">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a class="btn btn-info" href="#" role="button">Link</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/fez-1.jpg" class="card-img-top img-fluid" alt="fez-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a class="btn btn-info" href="#" role="button">Link</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/fez-1.jpg" class="card-img-top img-fluid" alt="fez-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a class="btn btn-info" href="#" role="button">Link</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--JUMBOTRON Y MODAL-->
+        <div class="jumbotron mt-5 rounded-0" id="jumbotron">
+            <div class="container">
+                <h1 class="display-4">¡Soy un jumbotron!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                    attention
+                    to
+                    featured content or information.</p>
+                <hr class="my-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger
+                        container.
+                    </p>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">
+                        Modal Aquí
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 id="fat">@fat</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus vel natus neque
+                            voluptatibus quo magnam modi provident a nisi quis? Exercitationem sit incidunt in deleniti
+                            illo natus neque optio asperiores.
+                            Autem explicabo ad suscipit consequuntur adipisci vero earum et ipsa, minus fugiat, ex
+                            doloribus alias commodi voluptatem eaque soluta consectetur possimus dolores in atque. Quis
+                            eum sequi numquam perferendis blanditiis.
+                            Aperiam illo rerum tempora aliquid laboriosam quia, voluptatum excepturi cupiditate
+                            repellat. Officiis sit doloremque iste nesciunt voluptates error facilis fugiat ducimus
+                            expedita impedit. Ab doloribus consequatur, amet tenetur dolore veniam?</p>
+                        <h4 id="mdo">@mdo</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus vel natus neque
+                            voluptatibus quo magnam modi provident a nisi quis? Exercitationem sit incidunt in deleniti
+                            illo natus neque optio asperiores.
+                            Autem explicabo ad suscipit consequuntur adipisci vero earum et ipsa, minus fugiat, ex
+                            doloribus alias commodi voluptatem eaque soluta consectetur possimus dolores in atque. Quis
+                            eum sequi numquam perferendis blanditiis.
+                            Aperiam illo rerum tempora aliquid laboriosam quia, voluptatum excepturi cupiditate
+                            repellat. Officiis sit doloremque iste nesciunt voluptates error facilis fugiat ducimus
+                            expedita impedit. Ab doloribus consequatur, amet tenetur dolore veniam?</p>
+                        <h4 id="one">one</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus vel natus neque
+                            voluptatibus quo magnam modi provident a nisi quis? Exercitationem sit incidunt in deleniti
+                            illo natus neque optio asperiores.
+                            Autem explicabo ad suscipit consequuntur adipisci vero earum et ipsa, minus fugiat, ex
+                            doloribus alias commodi voluptatem eaque soluta consectetur possimus dolores in atque. Quis
+                            eum sequi numquam perferendis blanditiis.
+                            Aperiam illo rerum tempora aliquid laboriosam quia, voluptatum excepturi cupiditate
+                            repellat. Officiis sit doloremque iste nesciunt voluptates error facilis fugiat ducimus
+                            expedita impedit. Ab doloribus consequatur, amet tenetur dolore veniam?</p>
+                        <h4 id="two">two</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus vel natus neque
+                            voluptatibus quo magnam modi provident a nisi quis? Exercitationem sit incidunt in deleniti
+                            illo natus neque optio asperiores.
+                            Autem explicabo ad suscipit consequuntur adipisci vero earum et ipsa, minus fugiat, ex
+                            doloribus alias commodi voluptatem eaque soluta consectetur possimus dolores in atque. Quis
+                            eum sequi numquam perferendis blanditiis.
+                            Aperiam illo rerum tempora aliquid laboriosam quia, voluptatum excepturi cupiditate
+                            repellat. Officiis sit doloremque iste nesciunt voluptates error facilis fugiat ducimus
+                            expedita impedit. Ab doloribus consequatur, amet tenetur dolore veniam?</p>
+                        <h4 id="three">three</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus vel natus neque
+                            voluptatibus quo magnam modi provident a nisi quis? Exercitationem sit incidunt in deleniti
+                            illo natus neque optio asperiores.
+                            Autem explicabo ad suscipit consequuntur adipisci vero earum et ipsa, minus fugiat, ex
+                            doloribus alias commodi voluptatem eaque soluta consectetur possimus dolores in atque. Quis
+                            eum sequi numquam perferendis blanditiis.
+                            Aperiam illo rerum tempora aliquid laboriosam quia, voluptatum excepturi cupiditate
+                            repellat. Officiis sit doloremque iste nesciunt voluptates error facilis fugiat ducimus
+                            expedita impedit. Ab doloribus consequatur, amet tenetur dolore veniam?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FORMULARIO Y MAPA-->
+        <section class="container mb-5" id="contacto">
+            <h3 class="mb-5">Contacto</h3>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Nombre:</label>
+                            <input type="text" placeholder="Escribe tu nombre" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email:</label>
+                            <input type="email" placeholder="Escribe tu email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Mensaje:</label>
+                            <textarea name="" id="" cols="30" rows="5" class="form-control"
+                                placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12805.22430011848!2d-116.40313207741825!3d36.643086679118525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c70baaaaaaaaab%3A0x9f97481bfe85a9d8!2sArea%2051%20Alien%20Center!5e0!3m2!1ses!2ses!4v1580041171636!5m2!1ses!2ses"
+                        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                        class="embed-responsive  my-5"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!--FOOTER-->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container d-flex justify-content-around">
+            <ul class="list-group list-group-flush my-2">
+                <li class="list-group-item list-group-item-dark bg-dark text-info">
+                    <h4>Secciones</h4>
+                </li>
+                <li class="list-group-item list-group-item-dark bg-dark text-light">Dapibus ac facilisis in</li>
+                <li class="list-group-item list-group-item-dark bg-dark text-light">Morbi leo risus</li>
+                <li class="list-group-item list-group-item-dark bg-dark text-light">Porta ac consectetur ac</li>
+                <li class="list-group-item list-group-item-dark bg-dark text-light">Vestibulum at eros</li>
+            </ul>
+
+            <ul class="list-group list-group-flush my-2">
+                <li class="list-group-item list-group-item-dark bg-dark text-info">
+                    <h4>Información</h4>
+                </li>
+                <li class="list-group-item list-group-item-dark bg-dark text-light">Dapibus ac facilisis in</li>
+                <li class="list-group-item list-group-item-dark bg-dark text-light">Morbi leo risus</li>
+                <li class="list-group-item list-group-item-dark bg-dark text-light">Porta ac consectetur ac</li>
+                <li class="list-group-item list-group-item-dark bg-dark text-light">Vestibulum at eros</li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>
